@@ -21,7 +21,7 @@ const loadFrame = (id, appScheme) => {
     iFrame.style.width = 0
     iFrame.style.height = 0
     iFrame.style.visibility = 'hidden'
-    iFrame.onLoad = () => {
+    iFrame.onload = () => {
       iFrame.src = appScheme
     }
     document.body.appendChild(iFrame)
